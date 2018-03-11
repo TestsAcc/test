@@ -1,0 +1,16 @@
+.idea/
+.vagrant/
+
+*.log
+
+host/data/vendor/
+host/data/composer.lock
+*.lock
+
+markup/node_modules/
+markup/elamastore.xcf
+
+vendor/
+
+.env
+

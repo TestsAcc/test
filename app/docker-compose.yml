@@ -1,0 +1,44 @@
+version: "3"
+
+volumes:
+    app.cache:
+
+services:
+
+    web:
+      container_name: nginx.app
+      build:
+        context: Docker_nginx/.
+        dockerfile: Dockerfile_nginx
+      ports:
+         - "80:80"
+      volumes:
+         - ./finance:/data
+         - /vagrant/markup/public:/data/public/static
+      links:
+        - php
+
+    php:
+      build:
+        context: Docker_php/.
+        dockerfile: Dockerfile_php
+      container_name: php.app
+      volumes:
+        - ./finance:/data
+        - /vagrant/markup/views:/data/templates
+        - app.cache:/data/var
+      links:
+        - db
+
+    db:
+      restart: always
+      container_name: postgres.app
+      build:
+        context: Docker_postgres/.
+        dockerfile: Dockerfile_postgres
+      environment:
+        POSTGRES_PASSWORD: example
+      ports:
+        - "5432:5432"
+      volumes:
+        - ./pgdata:/var/lib/postgresql:z

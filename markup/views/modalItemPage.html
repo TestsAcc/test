@@ -1,0 +1,20 @@
+
+<script id="modalItemPageRender" type="text/x-handlebars-template">
+    {% verbatim %}
+    <style>
+        .itemPageImg{
+            background-image:url(/static/images/{{imgItemPage}});
+        }
+    </style>
+    <div class="col-lg-6 itemPageImg" ></div>
+    <div class="col-lg-6">
+        <h3>{{title}}</h3>
+        <p>{{descript}}</p>
+        <div class="price">
+            <p>{{price}}</p>
+            <div class="elamka"></div>
+            <button>Купить</button>
+        </div>
+    </div>
+    {% endverbatim %}
+</script>

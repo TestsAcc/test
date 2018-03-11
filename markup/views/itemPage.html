@@ -1,0 +1,19 @@
+<script id="scriptItemPageRender" type="text/x-handlebars-template">
+    {% verbatim %}
+
+    <div class='col-lg-3 item'>
+        <a href='' onclick='itemPageRender({{id}});' data-toggle='modal' data-target='#itemPage'>
+            <div class="itemImg" style=background-image:url(/static/images/{{img}});>
+                <p>Страница товара</p>
+                </div>
+            </a>
+        <p>{{title}}</p>
+        <div class='price'>
+            <p>{{price}}</p>
+            <div class='elamka'></div>
+            <button>Купить</button>
+            </div>
+    </div>
+
+    {% endverbatim %}
+</script>

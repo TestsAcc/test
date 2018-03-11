@@ -1,0 +1,210 @@
+@Font-face{
+  font-family:lato_light;
+  src: url(../fonts/Lato-Light.ttf);
+}
+
+@Font-face{
+  font-family:lato_regular;
+  src: url(../fonts/Lato-Regular.ttf);
+}
+
+@Font-face{
+  font-family:lato_medium;
+  src: url(../fonts/Lato-Medium.ttf);
+}
+
+body{
+  background-color: #f3f3f3 !important;
+}
+
+nav{
+  background-color: #2e3040;
+  padding: 5px 0 5px 0;
+}
+
+nav ul{
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav li{
+  list-style-type: none;
+  padding: 15px 30px 0 0;
+
+}
+
+nav a{
+  color: #fff;
+  font: 24px lato_light;
+  text-decoration: none;
+}
+
+nav a:hover{
+  color: #fff;
+  font: 24px lato_light;
+  text-decoration: none;
+}
+
+nav a:active{
+  color: #fff;
+  font: 24px lato_light;
+  text-decoration: none;
+}
+
+.sign{
+  padding: 20px 0 0 0;
+  font: 18px lato_light;
+  text-align: right;
+}
+
+.sign a, .login a{
+  font: 20px lato_light;
+}
+
+.sign a:hover, .login a:hover{
+  font: 20px lato_light;
+}
+
+.sign a:active, .login a:active{
+  font: 20px lato_light;
+}
+
+.login{
+  padding: 20px 0 0 0;
+  font: 18px lato_light;
+  text-align: left;
+}
+
+.btnSign{
+  border: none !important;
+  background: #14a9cc !important;
+  border-radius: 5px !important;
+  cursor: pointer !important;
+  width: 90px !important;
+  height: 30px !important;
+  color: #fff !important;
+  font: 16px lato_regular !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+}
+
+.logo {
+  background-image: url("../images/logo.png");
+  width: 64px;
+  height: 64px;
+}
+
+.logoText{
+  font: 20px lato_light;
+  color: #fff;
+}
+
+/*-----------CATALOG--------------*/
+
+.catalog h3{
+  color: #000;
+  font: 20px lato_medium;
+  margin: 40px 0 20px 0;
+}
+
+.catalog a{
+  color: #000;
+  font: 20px lato_light;
+  text-decoration: none;
+}
+
+.catalog a:hover{
+  color: #000;
+  font: 20px lato_light;
+  text-decoration: none;
+}
+
+.catalog a:active{
+  color: #000;
+  font: 20px lato_light;
+  text-decoration: none;
+}
+
+/*---------------ITEM---------------*/
+
+.item{
+  background-color: #fff;
+  margin: 40px 0 0 0;
+  border: 5px solid;
+  color: #f3f3f3;
+}
+
+.itemImg{
+  width:175px;
+  height: 175px;
+ /* background-image: url("../images/lamaToy.jpg");*/
+  margin: 20px auto 0;
+}
+
+.item a{
+  text-decoration: none;
+}
+
+.item a:hover{
+  text-decoration: none;
+}
+
+.itemImg p{
+  opacity: 0;
+  font: 20px lato_light;
+  text-align: center;
+  color: #fff;
+  width:175px;
+  height: 175px;
+  padding-top: 85px;
+}
+
+.itemImg:hover p{
+  opacity: 1;
+  background: rgba(0,0,0,0.2);
+  cursor: pointer;
+  color: #fff;
+}
+
+.item p{
+  font: 18px lato_light;
+  color: #000;
+  text-align: center;
+}
+
+.price{
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  margin: 0 auto 20px;
+}
+
+.price p{
+  font: 24px lato_medium;
+  color: #000;
+  left: 25px;
+  margin: 0 0 0 0;
+}
+
+.price button{
+  border: none;
+  background: #14a9cc;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 80px;
+  height: 30px;
+  color: #fff;
+}
+
+.elamka{
+
+}
+
+/*----------------ITEM PAGE-------------*/
+
+.itemPageImg{
+  /*background-image: url("../images/lamaItemPage.png");*/
+  width: 400px;
+  height: 400px;
+}
+

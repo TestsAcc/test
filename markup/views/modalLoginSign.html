@@ -1,0 +1,57 @@
+
+<script id="loginModal" type="text/x-handlebars-template">
+    {% verbatim %}
+    <div class="modal-header">
+    <h4 class="modal-title">{{ modalTitle }}</h4>
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    </div>
+    <form role="form" class="loginForm">
+        <div class="modal-body">
+            <input type="email" class="form-control" id="loginEmail" placeholder="email" required><br>
+            <input type="password" class="form-control" id="loginPass" placeholder="Пароль" required>
+        </div>
+    </form>
+    <div class="modal-footer">
+        <input type="submit" class="btnSign close" data-dismiss="modal" aria-hidden="true" value="Отправить" onclick="login();">
+    </div>
+
+    {% endverbatim %}
+</script>
+
+<script id="signModal" type="text/x-handlebars-template">
+    {% verbatim %}
+    <div class="modal-header">
+    <h4 class="modal-title">{{ modalTitle }}</h4>
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    </div>
+    <form role="form" class="signForm">
+        <div class="modal-body">
+            <input type="text"  class="form-control" name="signFirstName" placeholder="Имя"><br>
+            <input type="text"  class="form-control" name="signLastName" placeholder="Фамилия"><br>
+            <input type="email" class="form-control" name="signEmail" placeholder="email"><br>
+            <input type="password" class="form-control" name="signPass" placeholder="Пароль"><br>
+            <input type="password" class="form-control" name="signRePass" placeholder="Повторите пароль">
+
+        </div>
+    </form>
+    <div class="modal-footer">
+        <input type="submit" class="btnSign" value="Отправить" onclick="signup();">
+    </div>
+
+    {% endverbatim %}
+</script>
+
+<script id="signSuccess" type="text/x-handlebars-template">
+    {% verbatim %}
+
+    <div class="modal-header">
+        <h1>Успешная регистрация</h1>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    </div>
+    <div class="modal-body">
+        <p>Можете войти в систему используя свой email и пароль</p>
+    </div>
+    </div>
+
+    {% endverbatim %}
+</script>

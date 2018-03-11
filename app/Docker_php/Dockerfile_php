@@ -1,0 +1,12 @@
+FROM php:7.2-fpm
+
+RUN apt-get update \
+    && echo 'deb http://packages.dotdeb.org jessie all' >> /etc/apt/sources.list \
+    && echo 'deb-src http://packages.dotdeb.org jessie all' >> /etc/apt/sources.list \
+    && apt-get install -y wget gnupg \
+    && wget https://www.dotdeb.org/dotdeb.gpg \
+    && apt-key add dotdeb.gpg \
+    && apt-get update \
+    && apt-get install -y libpq-dev && docker-php-ext-install pdo pdo_pgsql
+
+# if restarting container do: docker exec php.app chmod 777 -R /data/var
